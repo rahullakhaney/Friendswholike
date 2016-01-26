@@ -9,7 +9,7 @@
 
 <h1 class="recommended text-center">
 	<% if !user_signed_in? %>
-	check common interests between you and your friends on facebook
+	Check common interests between you and your friends on facebook
 	<% else %>
 		Hola <%= current_user.first_name %>! <%= link_to "Click here", new_link_path %> to post your own recipe.
 	<% end %>
