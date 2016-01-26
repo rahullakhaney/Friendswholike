@@ -5,7 +5,8 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
-    @links = Link.sorted
+    @q = Link.search(params[:q])
+    @links = @q.result
   end
 
   # GET /links/1

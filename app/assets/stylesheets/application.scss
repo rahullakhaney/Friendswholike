@@ -38,6 +38,12 @@ body {
 
 }
 
+input#q_title_cont {
+    width: 15em;
+    height: 40px;
+    margin-top: 10px;
+}
+
 .btn {
     &:hover {
       transition: 0.5s;
