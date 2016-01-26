@@ -16,7 +16,6 @@
  */
 
 $brand-primary: #E74C3C;
-$font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $navbar-default-bg: #fff;
 
 @import "bootstrap-sprockets";
@@ -24,8 +23,34 @@ $navbar-default-bg: #fff;
 @import "toastr";
 
 .navbar-brand {
-  font-weight: 800;
   text-transform: uppercase;
+  line-height: 50px;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid #cccccc;
+  margin-top: 15px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+
+}
+.votes {
+  .fa {
+      font-size: 25px;
+}
+}
+
+.navbar-nav > li {
+  line-height: 60px;
+}
+
+
+.navbar-nav > li > a {
+  line-height: 50px;
+}
+
+.navbar {
+  min-height: 80px;
 }
 
 footer {

@@ -1,4 +1,6 @@
+
 <nav class="navbar navbar-default">
+<div class="container">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -9,16 +11,12 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: "navbar-brand" do %>
-        wholikes
+        <i class="fa fa-thumbs-o-up"></i> wholikes.co
       <% end %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><%= link_to "Links", links_path %></li>
-      </ul>
-
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
           <%= yield :right_nav %>
@@ -38,4 +36,5 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
+</div>
 </nav>
