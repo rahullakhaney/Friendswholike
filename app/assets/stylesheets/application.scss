@@ -34,6 +34,13 @@ $navbar-default-bg: #fff;
   letter-spacing: 0.1em;
 
 }
+
+.btn {
+    &:hover {
+      transition: 0.5s;
+    }
+}
+
 .votes {
   .fa {
       font-size: 25px;

@@ -24,6 +24,11 @@ h1.recommended {
 
     a {
       color: #444;
+      text-decoration: none;
+      &:hover {
+        transition: 0.5s;
+        color: #E74C3C;
+      }
     }
   }
 
