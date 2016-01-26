@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require toastr
 //= require jquery
 //= require bootstrap-sprockets
 //= require_tree .
