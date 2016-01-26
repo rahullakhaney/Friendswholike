@@ -6,7 +6,7 @@ class LinksController < ApplicationController
   # GET /links.json
   def index
     @q = Link.search(params[:q])
-    @links = @q.result
+    @links = @q.result.order("created_at DESC")
   end
 
   # GET /links/1
