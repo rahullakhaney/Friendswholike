@@ -1,5 +1,10 @@
 <% content_for :right_nav do %>
-  <li><p class="navbar-btn"><%= link_to 'Submit A Link', new_link_path, class: "btn btn-default" %></p></li>
+  <li><p class="navbar-btn">
+  <%= link_to new_link_path, class: "btn btn-primary" do %>
+	Submit a link
+  <% end %>
+
+  </p></li>
 <% end %>
 
 <h1 class="recommended text-center">check common interests between you and your friends on facebook</h1>
