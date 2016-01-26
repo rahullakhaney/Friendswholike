@@ -6,9 +6,9 @@ class User < ActiveRecord::Base
 
   validates :first_name, :last_name, presence: true
 
-  # def confirmation_required?
-  # 	false
-  # end
+  def confirmation_required?
+  	false
+  end
 
   def name; "#{first_name} #{last_name}"; end
   def short_name; "#{first_name} #{last_name.first}."; end
